@@ -28,21 +28,25 @@
         newDiv.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
 
         document.body.appendChild(newDiv);
-
-        function countSheep() {
-            for (let i = 0; i < 3; i++) {
-                alert(`Sheep number: ${i}`);
-            }
-        }
-
     </script>
 
-    <input type="button" id="listeners" value="Hide Elem1">
+    <input type="button" id="hider" value="Hide Elem1">
+    <input type="button" id="shower" value="Show Elem1">
 
     <script>
-        listeners.addEventListener('click', function (e) {
+        hider.addEventListener('click', function () {
             elem.textContent = "";
         });
+
+        shower.addEventListener('click', function () {
+            elem.textContent = "Elem1";
+        });
     </script>
+
+    <section onclick="alert('section')"> SECTION
+        <div onclick="alert('div')">DIV
+            <p onclick="alert('p')">P</p>
+        </div>
+    </section>
 </body>
 </html>
