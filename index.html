@@ -14,14 +14,20 @@
         Elem2
     </div>
     <script>
-        let elem = document.getElementById('elem');
+        // let elem = document.getElementById('elem');
         elem.style.background = 'red';
         elem.style.color = 'white';
         elem.style.fontSize = '24px';
-        let elem2 = document.getElementById('elem2');
+        // let elem2 = document.getElementById('elem2');
         elem2.style.background = 'black';
         elem2.style.color = 'white';
         elem2.style.fontSize = '48px';
+
+        const newDiv = document.createElement('div');
+        newDiv.className = "alert alert-success";
+        newDiv.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
+
+        document.body.appendChild(newDiv);
     </script>
 </body>
 </html>
