@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Test</title>
+
+    <script>
+
+        // const wsUri = "ws://javascript.info";
+        // const webSocket = new WebSocket(wsUri);
+
+        // let output;
+
+        // const init = () => {
+        //     output = document.getElementById('output');
+        //     testWebSocket();
+        // }
+
+        // const testWebSocket = () => {
+        //     websocket.onopen    = (e) => onOpen(e);
+        //     websocket.onclose   = (e) => onClose(e);
+        //     websocket.onmessage = (e) => onMsg(e);
+        //     websocket.onerror   = (e) => onError(e);
+        // }
+
+        // const onOpen = (e) => {
+        //     writeMsg(`Connected!`);
+        //     sendMsg(`Thomas is so awesome!`);
+        // }
+
+        // const onClose = (e) => {
+        //     writeMsg(`Disconnected!`);
+        // }
+
+        // const onMsg = (e) => {
+        //     writeMsg(`<span style='color:blue;'> RESPONSE: 
+        //         ${e.data}</span>`
+        //     );
+        // }
+
+        // const onError = (e) => {
+        //     writeMsg(`<span style='color:blue;'> ERROR: 
+        //         ${e.data}</span>`
+        //     );
+        // }
+
+        // const sendMsg = (msg) => {
+        //     writeMsg(`SENT: ${msg}`);
+
+        //     websocket.send(msg);
+        // }
+
+        // const writeMsg = (msg) => {
+        //     const text = document.createElement('p');
+        //     text.style.wordWrap = 'break-word';
+        //     text.innerHTML = msg;
+        //     output.appendChild(text);
+        // }
+
+        // window.addEventListener('load', init)
+
+    </script>
+
+    <script src="socket.js" defer></script>
+
+</head>
+<body>
+    
+    <!-- message form -->
+    <input type="text" name="message" id="message">
+    <input type="button" value="Send" id="send">
+    <input type="button" value="Disconnect" id="disconnect">
+    
+    <!-- div with messages -->
+    <div id="messages"></div>
+
+</body>
+</html>
